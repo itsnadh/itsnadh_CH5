@@ -59,6 +59,10 @@ class HondaJazz extends Car {
     public void Klakson() {
         System.out.println("Klakson jazz : Piu Piu");
     }
+
+    public void PlayMusic() {
+        System.out.println("Jazz plays jazz music");
+    }
 }
 
 class ToyotaFortuner extends Car {
@@ -69,6 +73,10 @@ class ToyotaFortuner extends Car {
     public void Klakson() {
         System.out.println("Klakson car : Tetoot Tetoot");
     }
+
+    public void SelfDrive() {
+        System.out.println("Self drive mode activate");
+    }
 }
 
 class SuzukiKatana extends Car {
@@ -78,6 +86,10 @@ class SuzukiKatana extends Car {
 
     public void Klakson() {
         System.out.println("Klakson katana : Brum Brum");
+    }
+
+    public void Robot() {
+        System.out.println("Change to robot");
     }
 }
 
@@ -115,6 +127,7 @@ class RideVehicle {
         jazz.Manuver();
         jazz.PindahTransmisi();
         jazz.Klakson();
+        jazz.PlayMusic();
         System.out.println("roda jazz = " + katana.roda);
         System.out.println("kapasitas tangki jazz = " + jazz.kapasitas_tangki);
         System.out.println("tipe jazz = " + jazz.tipe);
@@ -128,6 +141,7 @@ class RideVehicle {
         fortuner.Manuver();
         fortuner.PindahTransmisi();
         fortuner.Klakson();
+        fortuner.SelfDrive();
         System.out.println("roda fortuner = " + katana.roda);
         System.out.println("kapasitas tangki fortuner = " + fortuner.kapasitas_tangki);
         System.out.println("tipe fortuner = " + fortuner.tipe);
@@ -141,6 +155,7 @@ class RideVehicle {
         katana.Manuver();
         katana.PindahTransmisi();
         katana.Klakson();
+        katana.Robot();
         System.out.println("roda katana = " + katana.roda);
         System.out.println("kapasitas tangki katana = " + katana.kapasitas_tangki);
         System.out.println("tipe katana = " + katana.tipe);
