@@ -53,14 +53,6 @@ public class BankAccount {
         return customerPhone;
     }
 
-    public int getDepositAmount() {
-        return depo;
-    }
-
-    public int getWithdrawAmount() {
-        return draw;
-    }
-
     // setter
     public void setAccountNumber(String accNumber) {
         this.accountNumber = accNumber;
@@ -96,8 +88,8 @@ public class BankAccount {
         this.draw = theDraw;
         System.out.println("Withdraw Amount : " + this.draw);
         if (this.draw > this.balance) {
-            System.out.println("***Saldo tidak mencukupi***");
-            // this.balance = this.balance;
+            System.out.println("***The Balance is not sufficient***");
+            System.out.println("Current Balance : " + this.balance);
         } else {
             this.balance -= this.draw;
             System.out.println("Balance after Withdraw : " + this.balance);
@@ -112,23 +104,22 @@ public class BankAccount {
         acc1.setCustomerName("Customer B");
         acc1.setCustomerEmail("customer_b_@email.com");
         acc1.setCustomerPhone("085123456789");
-        acc1.setAccountNumber("000000");
+        acc1.setAccountNumber("B0B0B0");
         acc1.setBalance(2000000);
 
         // getter
+        System.out.println("=========ACCOUNT INFORMATION=========");
         System.out.println("Customer Name : " + acc1.getCustomerName());
         System.out.println("Customer Email : " + acc1.getCustomerEmail());
         System.out.println("Customer Phone : " + acc1.getCustomerPhone());
         System.out.println("Account Number : " + acc1.getAccountNumber());
         System.out.println("Current Balance : " + acc1.getBalance());
-
-        acc1.Deposit(1000);
-        // System.out.println("Deposit Amount : " + acc1.getDepositAmount());
-        System.out.println("Balance after Deposit : " + acc1.getBalance());
-
+        System.out.println("=========DEPOSIT=========");
+        acc1.Deposit(1000000);
+        System.out.println("=========SUCCESS WITHDRAW=========");
+        acc1.Withdraw(2000000);
+        System.out.println("=========FAILED WITHDRAW=========");
         acc1.Withdraw(3000000);
-        // System.out.println("Withdraw Amount : " + acc1.getWithdrawAmount());
-        System.out.println("Balance after Withdraw : " + acc1.getBalance());
 
     }
 }

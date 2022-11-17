@@ -88,7 +88,6 @@ class RideVehicle {
         SuzukiKatana katana = new SuzukiKatana();
         HondaJazz jazz = new HondaJazz();
         ToyotaFortuner fortuner = new ToyotaFortuner();
-        Car obj = new SuzukiKatana();
 
         // vehicle
         System.out.println("=====VEHICLE=====");
@@ -102,6 +101,8 @@ class RideVehicle {
         car.Maju();
         car.Mundur();
         car.Belok();
+        car.Manuver();
+        car.PindahTransmisi();
         car.Klakson();
         System.out.println("roda car = " + car.roda);
         System.out.println("kapasitas tangki car = " + car.kapasitas_tangki);
@@ -111,6 +112,8 @@ class RideVehicle {
         jazz.Maju();
         jazz.Mundur();
         jazz.Belok();
+        jazz.Manuver();
+        jazz.PindahTransmisi();
         jazz.Klakson();
         System.out.println("roda jazz = " + katana.roda);
         System.out.println("kapasitas tangki jazz = " + jazz.kapasitas_tangki);
@@ -122,6 +125,8 @@ class RideVehicle {
         fortuner.Maju();
         fortuner.Mundur();
         fortuner.Belok();
+        fortuner.Manuver();
+        fortuner.PindahTransmisi();
         fortuner.Klakson();
         System.out.println("roda fortuner = " + katana.roda);
         System.out.println("kapasitas tangki fortuner = " + fortuner.kapasitas_tangki);
@@ -133,6 +138,8 @@ class RideVehicle {
         katana.Maju();
         katana.Mundur();
         katana.Belok();
+        katana.Manuver();
+        katana.PindahTransmisi();
         katana.Klakson();
         System.out.println("roda katana = " + katana.roda);
         System.out.println("kapasitas tangki katana = " + katana.kapasitas_tangki);
